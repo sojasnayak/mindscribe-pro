@@ -1,0 +1,73 @@
+/* frontend/src/App.css */
+.App {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.App-header {
+  margin-bottom: 2rem;
+}
+
+.journal-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Important */
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.response-box {     
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+/* frontend/src/App.css */
+
+.agent-selector {
+  margin: 1.5rem 0 1rem 0;
+}
+.agent-selector button {
+  background-color: #6c757d;
+  width: auto;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+.agent-selector button.active {
+  background-color: #007bff;
+}
+.analyze-button {
+  background-color: #28a745;
+}
+.analyze-button:hover:not(:disabled) {
+  background-color: #218838;
+}

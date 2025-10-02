@@ -1,0 +1,16 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  guide-agent:
+    build: ./backend/agents/guide
+    ports:
+      - "8000:80" # Maps your computer's port 8000 to the container's port 80
+    env_file:
+      - ./backend/agents/guide/.env
+
+  challenger-agent:
+    build: ./backend/agents/challenger
+    ports:
+      - "8001:80" # Maps your computer's port 8001 to the container's port 80
+    env_file:
+      - ./backend/agents/challenger/.env
