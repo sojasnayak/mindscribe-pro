@@ -9,11 +9,11 @@ import React from 'react';
 const agents = {
   guide: { 
     name: "The Guide",
-    port: 8000,
+    port: 8000, 
     prompt: "Analyze with The Guide"
   },
 
-  challenger: {
+  challenger: { 
     name: "The Challenger",
     port: 8001,
     prompt: "Challenge with The Challenger"
